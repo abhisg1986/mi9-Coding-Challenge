@@ -15,6 +15,8 @@ server.use(restify.queryParser());
 server.use(restify.bodyParser());
 
 
+var port = process.env.PORT || 8080;
+
 server.post('/', function (req, res, next) {
 
     if(validator.validateJSON(JSON.stringify(req.body))){
@@ -32,7 +34,7 @@ server.post('/', function (req, res, next) {
 
 
 
-server.listen(8080,'localhost',function () {
+server.listen(port,function () {
     console.log('%s listening at %s', server.name, server.url);
 });
 
