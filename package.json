@@ -1,0 +1,26 @@
+{
+  "name": "mi9-Coding-Challenge",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./src/service.js"
+  },
+  "apidoc": {
+    "description": "apiDoc basic example",
+    "title": "Custom apiDoc browser title",
+    "url": "",
+    "sampleUrl": "",
+    "template": {
+      "withCompare": false
+    }
+  },
+  "dependencies": {
+    "restify": "^3.0.2"
+  },
+  "devDependencies": {
+    "apidoc": "^0.12.3",
+    "mocha": "^2.2.4",
+    "mocha-bamboo-reporter": "^1.1.0",
+    "should": "^6.0.1"
+  }
+}
